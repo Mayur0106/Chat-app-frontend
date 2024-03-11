@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Col, Form ,Row,Button} from "react-bootstrap";
-import {useSignupUserMutation} from "../services/appApi";
+import {useSignupUserMutation} from "../services/appApi"; 
 import { Link,useNavigate } from "react-router-dom";
 import "./Signup.css"; 
 import botImg from "../assets/bot.jpeg";
