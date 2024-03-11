@@ -1,8 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 // define a service user a base URL
-
-const appApi = createApi({
+   const appApi = createApi({
     reducerPath: "appApi",
     baseQuery: fetchBaseQuery({
         baseUrl: "https://chat-app-api-kwu7.onrender.com",
