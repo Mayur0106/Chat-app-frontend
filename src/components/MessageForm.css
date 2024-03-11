@@ -56,5 +56,6 @@
     margin-left:10px;
 }
 .message-timestamp-left{
+    padding-left: 83%; 
     color: grey;
 }
