@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Col, Form ,Row,Button} from "react-bootstrap";
 import {useSignupUserMutation} from "../services/appApi";
 import { Link,useNavigate } from "react-router-dom";
-import "./Signup.css";
+import "./Signup.css"; 
 import botImg from "../assets/bot.jpeg";
 
 function Signup(){
@@ -92,7 +92,7 @@ function Signup(){
             <Button variant="primary" type="submit">
                   {uploadingImg || isLoading ? "Signing you up..." :"Signup"}
             </Button>
-            <div className="py-4">
+            <div className="py-2">
                 <p className="text-center">
                      Already have an account ? <Link to="/login">Login</Link>
                 </p>
