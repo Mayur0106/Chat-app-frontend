@@ -2,7 +2,7 @@
     margin-top: 30px; /* Default margin */
   }
 
-@media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
     /* For desktop screens */
     .element {
       margin-top: 5px; /* Adjusted margin for desktop */
