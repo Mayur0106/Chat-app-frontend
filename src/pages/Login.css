@@ -11,3 +11,21 @@
     background-reapet: no-repeat;
     overflow-x: hidden; 
 }
+
+.element{
+  margin-top: 30px; /* Default margin */
+}
+
+@media screen and (min-width: 768px) {
+  /* For desktop screens */
+  .element {
+    margin-top: 30px; /* Adjusted margin for desktop */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* For mobile screens */
+  .element {
+    margin-top: 35px; /* Adjusted margin for mobile */
+  }
+}
