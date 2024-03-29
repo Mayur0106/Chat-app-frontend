@@ -23,7 +23,7 @@ function Login(){
         });
     }    
     return (
-    <Container> 
+    <Container  className="element" > 
         <Row>
              <Col md={5} className="login__bg"></Col>
              <Col md={7} className="d-flex align-items-center justify-content-center flex-direction-column">
