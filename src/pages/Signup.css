@@ -1,3 +1,21 @@
+.element{
+    margin-top: 30px; /* Default margin */
+  }
+
+@media screen and (min-width: 768px) {
+    /* For desktop screens */
+    .element {
+      margin-top: 5px; /* Adjusted margin for desktop */
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    /* For mobile screens */
+    .element {
+      margin-top: 25px; /* Adjusted margin for mobile */
+    }
+  }
+
 .signup__bg{
     background-image: url(https://images.unsplash.com/photo-1622556498246-755f44ca76f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG1lc3NhZ2UlMjBhcHB8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60);
 /*     height: 92vh; */
