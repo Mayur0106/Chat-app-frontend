@@ -24,7 +24,35 @@
     bottom: 0;
     left: 12px;
 }
-.list_member{
+/* For Webkit (Chrome, Safari) */
+/* For Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* color of the thumb */
+}
+
+/* For Firefox */
+/* width of the scrollbar */
+/* you can only set width */
+.scrollbar {
     height: 40vh;
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: green #f1f1f1; /* thumb and track color */
 }
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .scrollbar {
+        max-height: 200px; /* Limit the height for mobile */
+    }
+}
+
+
