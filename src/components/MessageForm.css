@@ -3,7 +3,11 @@
     border:1px solid lightgrey;
     overflow-y: scroll;
     margin-bottom:20px;
+    scrollbar-width: thin;
+      scrollbar-color: green #f1f1f1;
 }
+
+
 
 .message-inner{
     margin-left: 20px;
@@ -43,7 +47,7 @@
     padding: 0;
     margin: 0 auto;
     text-align: center;
-    height: 100px;
+    height: 100 px;
 }
 
 .conversation-profile-pic{
@@ -56,6 +60,12 @@
     margin-left:10px;
 }
 .message-timestamp-left{
+    /* 
+    position: relative; 
+    background-color: red; */
     padding-left: 83%; 
     color: grey;
+    
 }
+
+
