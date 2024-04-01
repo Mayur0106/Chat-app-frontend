@@ -23,7 +23,7 @@ export default function MessageForm() {
          let day = date.getDate().toString();
 
         day = day.length >1 ? day : "0" +day;
-
+ 
         return  day+ "/" + month + "/"+year;
     }
 
@@ -60,8 +60,8 @@ export default function MessageForm() {
             {user && !privateMemberMsg?._id && <div className='alert alert-info'>You are in the {currentRoom} room</div>}
             {user && privateMemberMsg?._id && (
                 <>
-                    <div className='alert alert-info conversation-info'>
-                        <div>
+                    <div className='alert alert-info conversation-info '>
+                        <div >
                              Your conversation with {privateMemberMsg.name} <img src={privateMemberMsg.picture} className="conversation-profile-pic"/>
                         </div>
                     </div>
