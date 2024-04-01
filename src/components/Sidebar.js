@@ -42,7 +42,7 @@ function Sidebar() {
     });
 
     function getRooms() {
-        fetch("https://chat-app-api-kwu7.onrender.com/rooms")
+        fetch("http://localhost:5001/rooms")
             .then((res) => res.json())
             .then((data) => setRooms(data));
     }
@@ -75,7 +75,7 @@ function Sidebar() {
             ))}
        </ListGroup>
        <h2> Members</h2>
-       <div className="list_member">
+       <div   className="scrollbar">
        <ListGroup>
        {members.map((member) =>(
          <ListGroup.Item key={member.id} style={{ cursor: "pointer" }} active={privateMemberMsg?._id == member?._id} onClick={() => handlePrivateMemberMsg(member)} disabled={member._id === user._id}>
