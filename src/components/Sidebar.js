@@ -42,7 +42,7 @@ function Sidebar() {
     });
 
     function getRooms() {
-        fetch("http://localhost:5001/rooms")
+        fetch(`${process.env.REACT_APP_CHAT_APP_SERVER_URL}/rooms`)
             .then((res) => res.json())
             .then((data) => setRooms(data));
     }
