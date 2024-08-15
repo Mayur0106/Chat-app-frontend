@@ -32,7 +32,7 @@ function Signup(){
         data.append('upload_preset','nj8zscme');
         try{
             setUploadingImg(true);
-            let res = await fetch("https://api.cloudinary.com/v1_1/do3sksxgh/image/upload",{
+            let res = await fetch(process.env.REACT_APP_IMAGES_UPLOAD,{
             method: "post",
             body : data,
             });
